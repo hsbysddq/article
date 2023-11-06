@@ -31,9 +31,9 @@ class _RootPageState extends State<RootPage> {
       appBar: AppBar(
         title: const Text('Gacoan'),
       ),
-      body: const Row(
+      body: Row(
         children: [
-          Flexible(
+          const Flexible(
               flex: 6,
               child: Column(
                 children: [
@@ -51,6 +51,12 @@ class _RootPageState extends State<RootPage> {
                   ),
                 ],
               )),
+          Flexible(
+              flex: 4,
+              child: Column(children: [
+                Image.network(
+                    "https://png.pngtree.com/png-vector/20220710/ourmid/pngtree-spicy-chili-devil-noodles-illustration-vector-image-png-image_5830474.png")
+              ]))
         ],
       ),
     );
